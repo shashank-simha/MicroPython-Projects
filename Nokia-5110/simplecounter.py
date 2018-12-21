@@ -18,7 +18,7 @@ dc = Pin(15)
 rst = Pin(0)
 
 # backlight on
-bl = Pin(12, Pin.OUT, value=0)
+bl = Pin(12, Pin.OUT, value=1)
 
 lcd = pcd8544.PCD8544(spi, cs, dc, rst)
 lcd.contrast(0x3c, pcd8544.BIAS_1_40, pcd8544.TEMP_COEFF_0)
